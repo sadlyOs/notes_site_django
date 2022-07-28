@@ -10,6 +10,11 @@ https://github.com/sadlyOs/notes_site_django.git
 python3 -m env venv
 ```
 
+**Устанавливаем все нужные библиотеки из файла requirements.txt**
+```python
+python3 -m pip3 install -r requirements.txt 
+```
+
 > **Запускаем наш тестовый сервер**
 
 **Запуск на Windows:**
