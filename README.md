@@ -99,7 +99,40 @@ class TodoSerializer(serializers.ModelSerializer):
         fields = '__all__'  # используя api пользователь может получить все модели с класса с моделями
 ```
 
+#### В файле __api.py__ прописываем
 
+```python
+from .models import <Класс с моделями>
+from rest_framework import viewsets, permissions
+from .serializers import TodoSerializer
+
+
+class TodoViewSet(viewsets.ModelViewSet):
+    queryset = <Класс с моделями>.objects.all() # Берём все объекты (модели) с класса
+    permission_classes = [
+        permissions.AllowAny
+    ]
+    serializer_class = TodoSerializer
+```
+#### В файле __urls.py__ прописываем
+
+```python
+from rest_framework import routers
+from .api import TodoViewSet
+
+router = routers.DefaultRouter()
+router.register('api/notes', TodoViewSet, 'notes')
+
+urlpatterns = router.urls
+```
+# Последнее
+## Достаём JSON файл
+
+**Теперь после того,как мы создали своё api мы можем достать с сайта json файл для парсинга значений
+__Тепере достать json можно по следующему адресу__
+```python
+http://127.0.0.1:8000/testapi/api/notes/
+```
 
 
 
