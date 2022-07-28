@@ -82,9 +82,21 @@ ___
 path('testapi/', include('<название приложения>.urls')),
 ```
 >Мы создали страницу testapi к которой будут прикрепляться страницы с __<Названия приложения>.urls__
-#### создаём три файла в папке приложения
+#### Cоздаём три файла в папке приложения
 ```python
 serializers.py, urls.py, api.py 
+```
+
+#### В файле __serializers.py__ прописываем
+```python
+from rest_framework import serializers
+from .models import <Класс с моделями>
+
+
+class TodoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = <Класс с моделями>
+        fields = '__all__'  # используя api пользователь может получить все модели с класса с моделями
 ```
 
 
