@@ -3,5 +3,5 @@
 ___
 **Запускаем наш тестовый сервер**
 
-Запуск на Windows:
-python manage.py runserver
+> Запуск на Windows:
+  python manage.py runserver
