@@ -5,7 +5,7 @@ ___
 ```python
 https://github.com/sadlyOs/notes_site_django.git
 ```
-
+__
 
 > **Запускаем наш тестовый сервер**
 
