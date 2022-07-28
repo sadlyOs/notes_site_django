@@ -1,6 +1,8 @@
 # notes_site_django
 ### Второй проект новичка в Django :laughing:
 ___
+**Notes_site** - Это сайт с заметками написанный на __html/css/js/python(Django)__, в котором пользователи могут регестрироваться, оставлять заметки и их выполнять.
+
 **Клонируем репозиторий:**
 ```python
 https://github.com/sadlyOs/notes_site_django.git
