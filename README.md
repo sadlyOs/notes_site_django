@@ -1,7 +1,7 @@
 # notes_site_django
 ### Второй проект новичка в Django :laughing:
 ___
-**Запускаем наш тестовый сервер**
+> **Запускаем наш тестовый сервер**
 
-> Запуск на Windows:
-  python manage.py runserver
+`Запуск на Windows:
+python manage.py runserver`
