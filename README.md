@@ -1,4 +1,6 @@
-![](https://img.shields.io/pypi/v/Django?color=green&label=Django)4.0.5
+![Django](https://img.shields.io/pypi/v/Django?color=green&label=Django)
+![Djangorestframework](https://img.shields.io/pypi/v/djangorestframework?color=orange&label=djangorestframework)
+![Pillow](https://img.shields.io/pypi/v/djangorestframework?color=blue&label=Pillow)
 # notes_site_django
 ### Notes_site Django :laughing:
 ___
