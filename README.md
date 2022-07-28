@@ -50,14 +50,13 @@ ___
 
 ```python
 
-from django.core.management.base import BaseCommand
-from notes.models import Todo
 import sqlite3
+from django.core.management.base import BaseCommand
 from pprint import pprint
 
 
 class Command(BaseCommand):
-    help = "Телеграм-бот"
+    help = "Пробегаемся по моделям" # Обязательно пропишите эту переменную, чтобы после ввожа -h было понятно о чём ваш скрипт
 
     def handle(self, *args, **options):
         with sqlite3.connect("db.sqlite3") as data:
@@ -76,6 +75,17 @@ python3 manage.py scripts
 ```
 ___
 # API Сайта
+**Про создания api вы можете прочитать в форумах в [гугле](https://google.com), здесь я в кратце покажу, что прописывать. :pen:**
+
+#### В urls.py основного проекта в списке urlpatterns добавляем следующий код:
+```python
+path('testapi/', include('<название приложения>.urls')),
+```
+>Мы создали страницу testapi к которой будут прикрепляться страницы с __<Названия приложения>.urls__
+#### создаём три файла в папке приложения
+```python
+serializers.py, urls.py, api.py 
+```
 
 
 
