@@ -59,7 +59,7 @@ data = sqlite3.connect("db.sqlite3")
 
 
 class Command(BaseCommand):
-    help = "Телеграм-бот"
+    help = "Телеграм-бот"  # Обязательно пропишите help, чтобы можно было через -h понять, что представляет ваш скрипт
 
     def handle(self, *args, **options):
         cursor = data.cursor()
