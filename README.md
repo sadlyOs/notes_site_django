@@ -1,3 +1,4 @@
+![](https://img.shields.io/pypi/v/Django?color=green&label=Django)4.0.5
 # notes_site_django
 ### Notes_site Django :laughing:
 ___
@@ -133,7 +134,6 @@ __Теперь достать json можно по следующему адре
 ```python
 http://127.0.0.1:8000/testapi/api/notes/
 ```
-
 
 
 
