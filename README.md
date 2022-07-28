@@ -1,7 +1,10 @@
 # notes_site_django
 ### Второй проект новичка в Django :laughing:
 ___
->**Клонируем репозиторий**
+**Клонируем репозиторий:**
+```python
+https://github.com/sadlyOs/notes_site_django.git
+```
 
 
 > **Запускаем наш тестовый сервер**
