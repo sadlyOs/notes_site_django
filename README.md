@@ -1,2 +1,2 @@
 # notes_site_django
-###Первый проект новичка в Django :laughing
+### Первый проект новичка в Django :laughing
