@@ -1,6 +1,8 @@
 ![Django](https://img.shields.io/pypi/v/Django?color=green&label=Django)
 ![Djangorestframework](https://img.shields.io/pypi/v/djangorestframework?color=orange&label=djangorestframework)
-![Pillow](https://img.shields.io/pypi/v/djangorestframework?color=blue&label=Pillow)
+![Pillow](https://img.shields.io/pypi/v/Pillow?color=blue&label=Pillow)
+![pypi](https://img.shields.io/pypi/v/pypi?color=purple&label=pypi)
+![Python-version](https://img.shields.io/pypi/pyversions/django?color=purple)
 # notes_site_django
 ### Notes_site Django :laughing:
 ___
