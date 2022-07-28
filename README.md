@@ -16,7 +16,7 @@ ___
 ## :gear: Установка
 **Клонируем репозиторий:**
 ```python
-https://github.com/sadlyOs/notes_site_django.git
+git clone https://github.com/sadlyOs/notes_site_django.git
 ```
 **Устанавливаем виртуальное окружение следующей командой**
 ```python
