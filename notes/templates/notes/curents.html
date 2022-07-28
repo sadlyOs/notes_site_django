@@ -1,0 +1,18 @@
+{% extends 'notes/base.html' %}
+{% load static %}
+
+{% block content %}
+<ul class="content_create">
+    <h3 class="text_current">{{ del }}</h3>
+    {% for tod in todo %}
+    <li>
+        <a href="{% url 'todoviews' tod.id %}">
+        {% if tod.important %}<b>{% endif %}{{ tod.title }}{% if tod.important %}</b>{% endif %}
+        {% if tod.description %}- {{ tod.description }}...{% endif %}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

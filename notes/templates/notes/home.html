@@ -1,0 +1,14 @@
+
+{% extends 'notes/base.html' %}
+{% load static %}
+{% block content %}
+<div class="Logo_text">
+    <div class="text">
+        <h1>Создайте свою первую заметку</h1>
+        <form method="post" action="{% url 'createnotes' %}">
+            {% csrf_token %}
+        <button type="submit" class="c-button">Создать</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

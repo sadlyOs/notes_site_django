@@ -1,0 +1,19 @@
+{% extends 'notes/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<ul class="content_create">
+    <h3 class="text_current">{{ comp }}</h3>
+    {% for tod in todo %}
+    <li>
+        <a href="#">
+        {% if tod.important %}<b>{% endif %}{{ tod.title }}{% if tod.important %}</b>{% endif %}
+        {% if tod.description %}- {{ tod.description }}{% endif %}
+        {{ todo.datecompleted|date:'M j Y H:i' }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

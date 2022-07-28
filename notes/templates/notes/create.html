@@ -1,0 +1,47 @@
+{% extends 'notes/base.html' %} {% block content %}
+<div class="main_conteiner_create">
+  <article class="main_content_create">
+    <div class="block_create">
+      {% csrf_token %}
+      <div class="block__item_create block-item">
+        <h1 class="block-item__title_create">Создание заметки</h1>
+      </div>
+      <div class="form-box_create">
+        <form method="POST" class="form_create form_signin_create">
+          {% csrf_token %}
+          <h3 class="form__title_create">Введите поля</h3>
+
+          <p>
+            <input
+              name="title"
+              required=""
+              class="form__input"
+              id="id_title"
+              maxlength="50"
+              placeholder="Заголовок"
+            />
+          </p>
+          <p>
+            <textarea
+              name="description"
+              class="form__input"
+              id="id_description"
+              cols="40"
+              rows="10"
+              placeholder="Описание"
+            ></textarea>
+          </p>
+          <p>
+            Важно
+            <input type="checkbox" id="id_important" name="important">
+          </p>
+          <p>
+            <button class="form__btn">Создать</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </article>
+</div>
+
+{% endblock %}

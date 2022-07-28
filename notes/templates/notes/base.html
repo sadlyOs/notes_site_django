@@ -1,0 +1,59 @@
+<!Doctype html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'notes/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'notes/css/signup.css' %}">
+    <link rel="stylesheet" href="{% static 'notes/css/blockcreate.css' %}">
+    <link rel="stylesheet" href="{% static 'notes/css/current.css' %}">
+    <link rel="stylesheet" href="{% static 'notes/css/views.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">
+
+        {% if user.is_authenticated %}
+
+        Logged In as {{ user.username }}
+
+
+        <div class="logo_text_sign">
+            <ul class="main_menu">
+                <li><a href="{% url 'home' %}">Главная</a></li>
+                <li><a href="{% url 'createnotes' %}">Создать</a></li>
+                <li><a href="{% url 'current' %}">Не законченные</a></li>
+                <li><a href="{% url 'logoutuser' %}">Выйти</a></li>
+            </ul>
+            <img src="{% static 'notes/img/Logo.png' %}" alt="Logo">
+        </div>
+
+
+        {% else %}
+        <script src="{% static 'notes/js/scripts.js' %}" defer></script>
+
+        <div class="logo_text_sign">
+            <ul class="main_menu">
+                <li><a href="{% url 'registrations' %}">Создать</a></li>
+                <li><a href="{% url 'registrations' %}">Войти</a></li>
+            </ul>
+            <img src="{% static 'notes/img/Logo.png' %}" alt="Logo">
+            {% endif %}
+
+
+        </div>
+
+
+    </div>
+
+</div>
+<div class="content">
+    {% block content %}{% endblock %}
+</div>
+
+
+
+</body>
+</html>
