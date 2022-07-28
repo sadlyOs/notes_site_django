@@ -26,3 +26,6 @@ python manage.py runserver
 ```python
 python3 manage.py runserver
 ```
+___
+
+# Запускаем телеграм бота в Django
