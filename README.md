@@ -5,7 +5,10 @@ ___
 ```python
 https://github.com/sadlyOs/notes_site_django.git
 ```
-__
+**Устанавливаем виртуальное окружение следующей командой**
+```python
+python3 -m env venv
+```
 
 > **Запускаем наш тестовый сервер**
 
