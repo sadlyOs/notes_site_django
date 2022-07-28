@@ -6,6 +6,8 @@ ___
 
 **Notes_site api** - Сайт имеет свою api, написана на библиотеке __djangorestframework__
 
+
+## Установка
 **Клонируем репозиторий:**
 ```python
 https://github.com/sadlyOs/notes_site_django.git
